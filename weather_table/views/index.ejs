@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Data</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Temperature</th>
+        <th>Wind Speed</th>
+        <th>Wind Direction</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(entry => { %>
+        <tr>
+          <td><%= entry.name %></td>
+          <td><%= entry.lat %></td>
+          <td><%= entry.long %></td>
+          <td><%= entry.current_weather.temperature %></td>
+          <td><%= entry.current_weather.windspeed %></td>
+          <td><%= entry.current_weather.winddirection %></td>
+          <td><%= entry.address %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+
+</body>
+</html>
