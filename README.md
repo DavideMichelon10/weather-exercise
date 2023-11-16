@@ -1,4 +1,5 @@
 # Weather Exercise
+![IMG_3031](https://github.com/DavideMichelon10/weather-exercise/assets/30610916/c89644e1-872f-4c03-982f-2efce70de3bc)
 
 This project is a simple Node.js application that provides location and weather information for a list of users. The application uses Express.js to handle HTTP requests, EJS as the templating engine, and makes use of external APIs to fetch geolocation and weather data.
 
